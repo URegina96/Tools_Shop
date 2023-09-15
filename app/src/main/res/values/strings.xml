@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">toolsshop</string>
+    <string name="logo_description">Логотип магазина инструментов</string>
+
+    <string-array name="tools">
+        <item>Дрели</item>
+        <item>Шуруповерты</item>
+        <item>Перфораторы</item>
+        <item>Болгарки</item>
+        <item>Отвертки</item>
+        <item>Уровни</item>
+        <item>Пилы</item>
+        <item>Мотоблоки</item>
+        <item>Газонокосилки</item>
+
+        <item>Дрели детские</item>
+        <item>Шуруповерты детские</item>
+        <item>Перфораторы детские</item>
+        <item>Болгарки детские</item>
+        <item>Отвертки детские</item>
+        <item>Уровни детские</item>
+        <item>Пилы детские</item>
+        <item>Мотоблоки детские</item>
+        <item>Газонокосилки детские</item>
+    </string-array>
+</resources>

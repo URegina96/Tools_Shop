@@ -24,30 +24,30 @@ public class MainActivity extends AppCompatActivity {
             actionBar.hide();
         }
         //работа со "слушателями событий", тут onClick не подойдет, т.к. клик будет распространятся на весь спиннер-каталог, а не на определенные элементы в нем, тогда нам нужен доступ к listView
-        listViewTools=findViewById(R.id.listViewTools);
+        listViewTools = findViewById(R.id.listViewTools);
         //setOnItemClickListener - интерфейс, поэтому передаем в качестве параметра объект класса , который реализует данный интерфейс
         //создаем анонимный класс new AdapterView.OnItemClickListener()
         listViewTools.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
 
-                switch (position){ //позиция дрели = 0
+                switch (position) { //позиция дрели = 0
                     case 0: //тогда переходим в новую активность, для этого создаем intent
-                        Intent intent =new Intent(getApplicationContext(),DrillCategoryActivity.class);
+                        Intent intent = new Intent(getApplicationContext(), DrillCategoryActivity.class);
                         startActivity(intent);
                         break;
                 }
 
-                switch (position){ //позиция дрели = 0
+                switch (position) { //позиция дрели = 0
                     case 1: //тогда переходим в новую активность, для этого создаем intent
-                        Intent intent =new Intent(getApplicationContext(),ScrewdriversCategoryActivity.class);
+                        Intent intent = new Intent(getApplicationContext(), ScrewdriversCategoryActivity.class);
                         startActivity(intent);
                         break;
                 }
 
-                switch (position){ //позиция дрели = 0
+                switch (position) { //позиция дрели = 0
                     case 2: //тогда переходим в новую активность, для этого создаем intent
-                        Intent intent =new Intent(getApplicationContext(),HammersCategoryActivity.class);
+                        Intent intent = new Intent(getApplicationContext(), HammersCategoryActivity.class);
                         startActivity(intent);
                         break;
                 }

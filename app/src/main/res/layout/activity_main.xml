@@ -19,14 +19,14 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
 
-        app:srcCompat="@drawable/logo"
+        android:contentDescription="@string/logo_description"
 
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
 
-        android:contentDescription="@string/logo_description"
-        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo"
 
         tools:ignore="MissingConstraints" />
 

@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">toolsshop</string>
     <string name="logo_description">Логотип магазина инструментов</string>
+    <string name="logo_drill">Логотип дрели</string>
 
     <string-array name="tools">
         <item>Дрели</item>
@@ -23,4 +24,12 @@
         <item>Мотоблоки детские</item>
         <item>Газонокосилки детские</item>
     </string-array>
+
+    <string name="drill_one_title">Первая дрель</string>
+    <string name="drill_two_title">Вторая дрель</string>
+    <string name="drill_three_title">Третья дрель</string>
+
+    <string name="drill_one_info">Информация по первой дрели </string>
+    <string name="drill_two_info">Инфрмация по второй дрели</string>
+    <string name="drill_three_info">Инфрмация по третьей дрели</string>
 </resources>

@@ -6,4 +6,99 @@
     android:layout_height="match_parent"
     tools:context=".DrillDetailActivity">
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineDrillsDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <ImageView
+        android:id="@+id/imageViewLogoDrillsDetail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_margin="16dp"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+
+        android:contentDescription="@string/logo_drill"
+
+        app:layout_constraintBottom_toTopOf="@+id/guidelineDrillsDetail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/onedrill" />
+
+    <TextView
+        android:id="@+id/textViewDrillsDetailTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_title_drill"
+        android:gravity="center"
+        android:padding="4dp"
+
+        android:paddingStart="4dp"
+        android:paddingLeft="4dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="4dp"
+        android:paddingRight="4dp"
+        android:paddingBottom="4dp"
+        android:text="@string/drill_one_title"
+
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineDrillsDetailInfo"
+        app:layout_constraintTop_toTopOf="@+id/guidelineDrillsDetail" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineDrillsDetailInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <ScrollView
+        android:id="@+id/ScrollViewDrillsDetail"
+        android:layout_width="409dp"
+        android:layout_height="498dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDrillsDetailTitle"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewDrillsDetailInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+
+                android:padding="4dp"
+                android:paddingStart="4dp"
+                android:paddingLeft="4dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="4dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="4dp"
+
+                android:text="@string/drill_one_info"
+                android:textColor="@color/black"
+                android:textSize="36sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

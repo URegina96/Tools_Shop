@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Toolsshop"
         tools:targetApi="31">
         <activity
+            android:name=".ScrewdriverDetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".DrillDetailActivity"
             android:exported="false" />
         <activity

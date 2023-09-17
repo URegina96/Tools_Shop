@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                 }
 
-                switch (position) { //позиция дрели = 0
+                switch (position) { //позиция шуруповерта = 1 
                     case 1: //тогда переходим в новую активность, для этого создаем intent
                         Intent intent = new Intent(getApplicationContext(), ScrewdriversCategoryActivity.class);
                         startActivity(intent);
